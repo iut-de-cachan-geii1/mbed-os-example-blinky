@@ -1,0 +1,16 @@
+{
+    "target_overrides": {
+        "NUCLEO_F429ZI": {
+            "target.ARDUINO_UNO_D11_configuration": "PB_5",
+            "target.ARDUINO_UNO_A3_configuration": "PD_11",
+            "platform.minimal-printf-enable-floating-point": true,
+            "target.components_add": [
+                "SD"
+            ],
+            "sd.SPI_MOSI": "PE_6",
+            "sd.SPI_MISO": "PE_5",
+            "sd.SPI_CLK": "PE_2",
+            "sd.SPI_CS": "PE_4"
+        }
+    }
+}
